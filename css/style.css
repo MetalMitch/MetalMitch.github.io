@@ -76,7 +76,7 @@ li {
 
 /* Navbar mobile */
 .navbar {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 7vh;
@@ -101,7 +101,7 @@ li {
     color: whitesmoke;
     display: block;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 3vw;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -532,4 +532,12 @@ li {
     .contactform input[type="submit"] {
         width: 25%;
     }
+}
+
+@media only screen and (min-width: 664px) {
+
+    .navbar {
+        position: absolute;
+    }
+
 }
