@@ -70,6 +70,10 @@ li {
     padding-bottom: 10vh;
 }
 
+#fullPage {
+    height: 93vh;
+}
+
 /* Navbar mobile */
 .navbar {
     position: absolute;
@@ -189,6 +193,10 @@ li {
     text-align: center;
 }
 
+.profilecontent p {
+    font-style: oblique;
+}
+
 /* Skills section */
 
 .skills {
@@ -196,9 +204,9 @@ li {
     font-size: 2rem;
 }
 
-/* .logos {
-
-} */
+.fp-slidesNav {
+    padding-bottom: 3rem;
+}
 
 .html5 {
     width: 50%;
@@ -231,9 +239,11 @@ li {
 /* Portfolio Section */
 
 .portfolio h1 {
-    text-align: center;
-    font-size: 2rem;
+    position: absolute;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
 }
 
 .portfolio p {
@@ -241,12 +251,17 @@ li {
     text-align: center;
 }
 
+.portfolio ul {
+    width: 60%;
+    margin: auto;
+}
+
 .portfolio li {
     list-style-type: disc;
 }
 
 #portbtn {
-    width: 35%;
+    width: 131px;
     margin: auto;
 }
 
@@ -280,6 +295,10 @@ li {
     margin: auto;
 }
 
+#desktop {
+    display: none;
+}
+
 #flexlinks {
     display: flex;
     justify-content: space-around;
@@ -306,6 +325,7 @@ li {
 
 #contactright p {
     font-size: 1rem;
+    font-style: oblique;
 }
 
 .contactform input {
@@ -353,4 +373,156 @@ li {
     color: whitesmoke;
 }
 
-        
+@media only screen and (min-width: 768px) {
+
+    #fullPage {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body.fp-viewing-firstPage-0 .navbar {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        width: 7vw;
+        top: 0;
+        right: 0;
+        background-image: none;
+        background-color: #e0e0e2;
+        border-left: 2px solid #7389AE;
+        border-bottom: 2px solid #7389AE;
+        border-radius: 0 0 0 10px;
+        padding-right: env(safe-area-inset-right);
+        height: 45vh;
+    }
+
+    .navbar div {
+        margin-bottom: 1.8rem;
+    }
+
+    .bottom-nav i {
+        color: #416788;
+    }   
+
+    .bottom-nav span {
+        color: #416788;
+    }
+
+    .box-1 {
+        order: 1;
+    }
+
+    .box-1 img {
+        border: 1px solid #416788;
+    }
+    
+    .box-2 {
+        order: 2;
+    }
+
+    .box-3 {
+        order: 3;
+    }
+
+    .box-4 {
+        order: 4;
+    }
+
+    .box-5 {
+        order: 5;
+    }
+
+    .bottom-nav {
+        flex-direction: column;
+    }
+
+    .landing::before {
+        background: url(/images/landscape.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(75%) blur(3px);
+    }
+
+    .landingtext {
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+        transform: translate(-0%, -40%);
+        -ms-transform: translate(-0%, -40%);
+        top: 0%;
+        left: 40%;
+    }
+
+    .profilecontent {
+        width: 70%;
+    }
+
+    .profilecontent h1 {
+        font-size: 3rem;
+    }
+
+    .profilecontent p {
+        font-size: 1.5rem;
+    }
+
+    .html5, .js, .php {
+        width: auto;
+        height: 50%;
+        top: 35%;
+        transform: translateY(-35%);
+    }
+
+    .css3 {
+        width: auto;
+        height: 60%;
+        top: 35%;
+        transform: translateY(-35%);
+    }
+
+    .fp-slidesNav {
+        padding-bottom: 1rem;
+    }
+
+    .portfolio p {
+        font-size: 2rem;
+    }
+
+    .portfolio li {
+        font-size: 1.5rem;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #contactflex {
+        flex-direction: row;
+        width: 93vw;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inherit;
+        margin-bottom: 4rem;
+    }
+
+    #contactleft {
+        flex: 2;
+        order: 1;
+    }
+
+    #contactright {
+        order: 2;
+        margin-bottom: 3rem;
+    }
+
+    #contactright p {
+        font-size: 1.5rem;
+    }
+
+    .contactform input[type="submit"] {
+        width: 25%;
+    }
+}

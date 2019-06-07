@@ -23,7 +23,7 @@
         <div class="section landing content">
             <div class="landingtext">
                 <h1>Mitchell Skee</h1>
-                <p>Student, Aspiring Web Developer</p>
+                <div id="mobile"><p>Student, Aspiring Web Developer</p></div>
             </div>
         </div>
         <div class="section profile">
@@ -64,17 +64,14 @@
         <div class="section contact content">
             <h1>Contact</h1>
             <div id="contactflex">
-                <div id="contactleft">
-                    <form class="contactform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                        <input type="text" name="firstname" placeholder="Enter Your First Name">
-                        <input type="text" name="surname" placeholder="Enter Your Surname">
-                        <input type="text" name="email" placeholder="Enter Your Email Address">
-                        <textarea type="text" name="message" placeholder="Enter Your Message"></textarea>
-                        <input class="btn" type="submit" name="submit" value="Submit">
-                    </form>
-                </div>
                 <div id="contactright">
-                    <p>To contact Mitchell, fill in the form on the left or contact directly using one of the links below</p>
+                    <div id="mobile">
+                        <p>To contact Mitchell, contact directly using one of the links below, or fill in the form below</p>
+                    </div>
+                    <div id="desktop">
+                        <p>To contact Mitchell, fill in the form on the left or contact directly using one of the links below</p>
+                    </div>
+                
                     <div id="flexlinks">
                         <div id="flexlinkbox">
                             <a href="#" class="social"><i class="far fa-envelope"></i></a>
@@ -83,6 +80,15 @@
                             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+                </div>
+                <div id="contactleft">
+                    <form class="contactform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <input type="text" name="firstname" placeholder="Enter Your First Name">
+                        <input type="text" name="surname" placeholder="Enter Your Surname">
+                        <input type="text" name="email" placeholder="Enter Your Email Address">
+                        <textarea type="text" name="message" placeholder="Enter Your Message"></textarea>
+                        <input class="btn" type="submit" name="submit" value="Submit">
+                    </form>
                 </div>
             </div>
         </div>
@@ -94,7 +100,9 @@
             licenseKey: 'D1B07A51-0AAC40B9-8529AA8F-669562C2',
             autoScrolling: true,
             anchors: ['landing', 'profile', 'skills', 'portfolio', 'contact'],
+            slidesNavigation: true,
             controlArrows: false,
+            recordHistory: false,
         })
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
