@@ -1,0 +1,5 @@
+<i class="fas fa-address-card"></i>         about
+<i class="fas fa-lightbulb"></i>            skills
+<i class="fas fa-folder"></i>               portfolio
+<i class="fas fa-user-plus"></i>            contact
+
