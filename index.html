@@ -12,10 +12,10 @@
 <body>
     <nav class="navbar">
             <div class="box-1"><a href="#landing"><img src="/images/square.jpg" alt=""></a></div>
-            <div class="box-2"><a href="#profile" class="profilelink"><i class="fas fa-address-card"></i><span>Profile</span></a></div>
-            <div class="box-3"><a href="#skills" class="skillslink"><i class="fas fa-lightbulb"></i><span>Skills</span></a></div>
-            <div class="box-4"><a href="#portfolio" class="portfoliolink"><i class="fas fa-folder"></i><span>Portfolio</span></a></div>
-            <div class="box-5"><a href="#contact" class="contactlink"><i class="fas fa-user-plus"></i><span>Contact</span></a></div>
+            <div class="box-2"><a href="#profile" class="links"><i class="fas fa-address-card"></i><span>Profile</span></a></div>
+            <div class="box-3"><a href="#skills" class="links"><i class="fas fa-lightbulb"></i><span>Skills</span></a></div>
+            <div class="box-4"><a href="#portfolio" class="links"><i class="fas fa-folder"></i><span>Portfolio</span></a></div>
+            <div class="box-5"><a href="#contact" class="links"><i class="fas fa-user-plus"></i><span>Contact</span></a></div>
     </nav>
     <div id="fullPage">
         <div class="section landing content">
@@ -24,14 +24,14 @@
                 <div id="mobile"><p>Student, Aspiring Web Developer</p></div>
             </div>
         </div>
-        <div class="section profile">
+        <div class="section fp-auto-height-responsive profile">
             <div class="content profilecontent">
                 <h1>A Technology lover, transitioning from success in retail & sales to web development</h1>
                 <p>The conscious choice to re-purpose career trajectory is deep rooted in a love of beautiful,
                     responsive, user-friendly design and the desire to create products that users will love to use</p>
             </div>
         </div>
-        <div class="section skills content">
+        <div class="section fp-auto-height-responsive skills content">
             <h1>Skills</h1>
             <div class="slide">
                 <img src="/images/html5.svg" alt="HTML 5" class="logos html5">
@@ -46,7 +46,7 @@
                 <img src="/images/php.svg" alt="HTML 5" class="logos php">
             </div>
         </div>
-        <div class="section portfolio content">
+        <div class="section fp-auto-height-responsive portfolio content">
             <h1>Portfolio</h1>
             <p>Having just finished FdSc Applied Computing, Web Development topics have touched on:
                 <ul>
@@ -59,7 +59,7 @@
             <br>
             <div id="portbtn"><a href="#" class="btn">Portfolio</a></div>
         </div>
-        <div class="section contact content">
+        <div class="section fp-auto-height-responsive contact content">
             <h1>Contact</h1>
             <div id="contactflex">
                 <div id="contactright">
@@ -101,6 +101,7 @@
             slidesNavigation: true,
             controlArrows: false,
             recordHistory: false,
+            responsiveHeight: 664,
         })
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"

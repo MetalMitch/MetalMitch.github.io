@@ -236,10 +236,8 @@ li {
 /* Portfolio Section */
 
 .portfolio h1 {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
+    position: relative;
     font-size: 4rem;
 }
 
